@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="./bootstrap-4.5.0/css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheets/inicio.css">
+  <link rel="stylesheet" href="./fontawesome/css/all.css">
+  <script src="./js/jquery-3.5.1.js"></script>
+  <script src="./bootstrap-4.5.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="./bootstrap-4.5.0/js/bootstrap.js"></script>
+</head>
+<body>
+
+  <div class="container-fluid">
+
+    <!-- Logo -->
+
+    <nav class="navbar navbar-expand">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img class="logo" src="./images/Logo/logo.jpg" alt="Logo Villa Italia">
+          </a>
+          <ul class="nav navbar-nav float-lg-right user-info">
+              <li class="dropdown nav-item">
+                  <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+                      <span class="user-name">Fran Puertas</span>
+                      <span class="angle-down s7-angle-down"></span>
+                  </a>
+                  <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="/cart">
+                          <span class="icon s7-tools"></span>
+                          Cart - <%= total %>$
+                      </a>
+                      <a class="dropdown-item" href="pages-login.php">
+                          <span class="icon s7-power"></span>Log out
+                      </a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+    </nav>
+
+    <!-- Menu navegacion -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/tienda">Shop Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cart">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contacto">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="row informacionProducto">
+
+        <!-- Productos similares  -->
+
+        <div class="col-lg-4 col-sm-12">
+
+          <h3 style="margin-bottom: 30px;">SEARCH PRODUCTS</h3>
+          <input type="texto" class="form-control email" placeholder="Search Products...">
+          <button type="button" class="btn btn-primary" style="background-color: rgb(90, 136, 202); border: none;">Search</button>
+
+          <h3 style="margin-top: 30px;">Products</h3>
+
+          <div class="container-fluid">
+
+            <div class="row recomendacion">
+
+              <div class="col-lg-4 col-sm-6">
+                <div class="container recomendado">
+                  <img src="./images/Telefono 1/telefono1_1.jpg" class="recomendado"/>
+                </div>    
+              </div>
+  
+              <div class="col-lg-8 col-sm-6 col-xs-12 infoRecomendado">
+                <h4>Telefono 1</h4>
+                <p>$300</p>
+                <div class="botonRecomendado">
+                  <a href="/producto1" class="btn btn-primary">Show Product</a>
+                </div>
+              </div>
+  
+            </div>
+  
+            <div class="row recomendacion">
+  
+              <div class="col-lg-4 col-sm-6">
+                <div class="container recomendado">
+                  <img src="./images/Telefono 2/telefono2_2.jpg" class="recomendado"/>
+                </div>    
+              </div>
+  
+              <div class="col-lg-8 col-sm-6 col-xs-12 infoRecomendado">
+                <h4>Telefono 2</h4>
+                <p>$400</p>
+                <div class="botonRecomendado">
+                  <a href="/producto2" class="btn btn-primary">Show Product</a>
+                </div>
+              </div>
+  
+            </div>
+  
+            <div class="row recomendacion">
+  
+              <div class="col-lg-4 col-sm-6">
+                <div class="container recomendado">
+                  <img src="./images/Telefono 3/telefono3_1.jpg" class="recomendado"/>
+                </div>    
+              </div>
+  
+              <div class="col-lg-8 col-sm-6 col-xs-12 infoRecomendado">
+                <h4>Telefono 3</h4>
+                <p>$500</p>
+                <div class="botonRecomendado">
+                  <a href="/producto3" class="btn btn-primary">Show Product</a>
+                </div>
+              </div>
+  
+            </div>
+  
+            <div class="row recomendacion">
+  
+              <div class="col-lg-4 col-sm-6">
+                <div class="container recomendado">
+                  <img src="./images/Telefono 4/telefono4_1.jpg" class="recomendado"/>
+                </div>    
+              </div>
+  
+              <div class="col-lg-8 col-sm-6 col-xs-12 infoRecomendado">
+                <h4>Telefono 4</h4>
+                <p>$600</p>
+                <div class="botonRecomendado">
+                  <a href="/producto4" class="btn btn-primary">Show Product</a>
+                </div>
+              </div>
+  
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-8 col-sm-12 col-xs-12">
+
+          <!-- Informacion del producto -->
+
+          <div class="row informacion-row">
+
+            <!-- Foto del producto -->
+
+            <div class="col-lg-6 col-sm-12">
+              <div class="container-fluid">
+
+                <h3 style="margin-bottom: 30px;">Foto del Producto</h3>
+                <div class="container-fluid">
+                  <img id="photo" src="./images/Telefono 7/telefono7_1.jpg" class="foto"/>
+                </div>
+              </div>
+            </div>
+
+            <!-- Detalles del producto -->
+
+            <div class="col-lg-6 col-sm-12 col-xs-12">
+              <div class="container-fluid">
+
+                <h3 id="name" style="margin-bottom: 30px;">Telefono 7</h3>
+
+                <p>Price: $<span id="price">700</span></p>
+
+                <form id="form" class="form-inline">    
+                  <div class="form-group mx-sm-3 mb-2">
+                    <input type="number" class="form-control" id="quantity" placeholder="Quantity" value="1" min="1" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary mb-2" onclick="addProduct()">Add to cart</button>
+                </form>
+                
+                <hr/>
+                <p class="tag">Category: <a href="#">Telephone</a>, Tags: <a href="#">sale</a>, <a href="#">awesome</a>, <a href="#">shoes</a> </p>
+                <hr/>
+
+                <h3>Description</h3>
+
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in laoreet nisl. Vivamus elit lacus, volutpat a luctus vitae, ultricies a dolor. Sed faucibus erat sit amet tortor rutrum maximus. Fusce ex turpis, laoreet gravida magna sit amet, condimentum tincidunt ex. Maecenas eleifend porttitor facilisis. Aenean ac dui nulla. Aliquam erat volutpat.</p>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="container-fluid">
+              <div class="row">
+
+                 <!-- Te puede interesar... -->
+
+                <div class="col">
+
+                  <h3 style="margin-bottom: 30px;">You may be interested in...</h3>
+                  <div class="row">
+
+                    <div class="col-lg-4 col-sm-6 col-xs-12 publicidad">
+                      <p>Telefono 2</p>
+                      <img src="./images/Telefono 2/telefono2_1.jpg"/>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 col-xs-12 publicidad">
+                      <p>Telefono 1</p>
+                      <img src="./images/Telefono 1/telefono1_1.jpg"/>                      
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 col-xs-12 publicidad">
+                      <p>Telefono 3</p>
+                      <img src="./images/Telefono 3/telefono3_1.jpg"/>
+                    </div>
+
+                  </div>
+
+                </div> 
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Pie de pagina -->
+
+      <div class="row pie justify-content-center">
+
+        <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 20px;">
+          <h3 style="color: white;">Online Shopping</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt tortor vel mauris congue rutrum. Vivamus mattis, nulla in pulvinar finibus, dolor augue aliquet massa, eget dictum augue velit a eros. Morbi porta sem dapibus facilisis feugiat. Donec ac odio sapien. Duis in scelerisque arcu. Morbi elementum purus nec odio aliquam, ut ultrices turpis facilisis. Duis tincidunt magna venenatis augue mollis tincidunt. Phasellus sodales nec risus quis tempor. </p>
+          <div class="row social" style="margin-left: 0.1%;">
+
+            <div class="col-2 socialButton">
+              <a href="#" style="color: white;">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+
+            <div class="col-2 socialButton">
+              <a href="#" style="color: white;">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+
+            <div class="col-2 socialButton">
+              <a href="#" style="color: white;">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 20px;">
+          <h3 style="color: white;">User navigation</h3>
+          <a href="#" style="color:  rgb(132, 142, 133);">My account</a>
+          <hr/>
+          <a href="#" style="color:  rgb(132, 142, 133);">Order History</a>
+          <hr/>
+          <a href="#" style="color:  rgb(132, 142, 133);">Wishlist</a>
+          <hr/>
+          <a href="#" style="color:  rgb(132, 142, 133);">Front page</a>
+          <hr/>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 20px;">
+          <h3 style="color: white;">Categories</h3>
+          <a href="#" style="color:  rgb(132, 142, 133);">Mobile Phone</a>
+          <hr/>
+          <a href="#" style="color:  rgb(132, 142, 133);">Home accesories</a>
+          <hr/>
+          <a href="#" style="color:  rgb(132, 142, 133);">LED TV</a>
+          <hr/>
+          <a href="#" style="color:  rgb(132, 142, 133);">Computer</a>
+          <hr/>
+          <a href="#" style="color:  rgb(132, 142, 133);">Gadets</a>
+          <hr/>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 20px;">
+          <h3 style="color: white;">Newsletter</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt tortor vel mauris congue rutrum.</p>
+          <input type="email" class="form-control email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <button type="button" class="btn btn-primary" style="background-color: rgb(90, 136, 202); border: none;">Suscribe</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="/scripts/products.js"></script>
+
+</body>
+</html>

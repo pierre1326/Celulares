@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="./bootstrap-4.5.0/css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheets/inicio.css">
+  <link rel="stylesheet" href="./fontawesome/css/all.css">
+  <script src="./js/jquery-3.5.1.js"></script>
+  <script src="./bootstrap-4.5.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="./bootstrap-4.5.0/js/bootstrap.js"></script>
+</head>
+<body>
+
+  <div class="container-fluid">
+
+    <!-- Logo -->
+
+    <nav class="navbar navbar-expand">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img class="logo" src="./images/Logo/logo.jpg" alt="Logo Villa Italia">
+          </a>
+          <ul class="nav navbar-nav float-lg-right user-info">
+              <li class="dropdown nav-item">
+                  <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+                      <span class="user-name">Fran Puertas</span>
+                      <span class="angle-down s7-angle-down"></span>
+                  </a>
+                  <div class="dropdown-menu" role="menu">
+                      <a class="dropdown-item" href="/cart">
+                          <span class="icon s7-tools"></span>
+                          Cart - <%= total %>$
+                      </a>
+                      <a class="dropdown-item" href="pages-login.php">
+                          <span class="icon s7-power"></span>Log out
+                      </a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+    </nav>
+
+    <!-- Menu navegacion -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/tienda">Shop Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cart">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contacto">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- Carousel -->
+
+      <div class="row pizzeria-carousel">
+          <div class="col-12">
+              <div id="promos-carousel" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                      <li data-target="#promos-carousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#promos-carousel" data-slide-to="1"></li>
+                      <li data-target="#promos-carousel" data-slide-to="2"></li>
+                      <li data-target="#promos-carousel" data-slide-to="3"></li>
+                      <li data-target="#promos-carousel" data-slide-to="4"></li>
+                      <li data-target="#promos-carousel" data-slide-to="5"></li>
+                      <li data-target="#promos-carousel" data-slide-to="6"></li>
+                      <li data-target="#promos-carousel" data-slide-to="7"></li>
+                      <li data-target="#promos-carousel" data-slide-to="8"></li>
+                      <li data-target="#promos-carousel" data-slide-to="9"></li>
+                      <li data-target="#promos-carousel" data-slide-to="10"></li>
+                      <li data-target="#promos-carousel" data-slide-to="11"></li>
+                      <li data-target="#promos-carousel" data-slide-to="12"></li>
+                      <li data-target="#promos-carousel" data-slide-to="13"></li>
+                      <li data-target="#promos-carousel" data-slide-to="14"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <a href="/producto1"> 
+                          <img class="d-block w-100" src="./images/Carousel/telefono1.jpg">
+                        </a>       
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/producto2"> 
+                          <img class="d-block w-100" src="./images/Carousel/telefono2.jpg">
+                        </a>       
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/producto3"> 
+                          <img class="d-block w-100" src="./images/Carousel/telefono3.jpg">
+                        </a>       
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/producto4"> 
+                          <img class="d-block w-100" src="./images/Carousel/telefono4.jpg">
+                        </a>       
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/producto5"> 
+                          <img class="d-block w-100" src="./images/Carousel/telefono5.jpg">
+                        </a>       
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/producto6"> 
+                          <img class="d-block w-100" src="./images/Carousel/telefono6.jpg">
+                        </a>       
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/producto7"> 
+                          <img class="d-block w-100" src="./images/Carousel/telefono7.jpg">
+                        </a>       
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/producto8"> 
+                          <img class="d-block w-100" src="./images/Carousel/telefono8.jpg">
+                        </a>       
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/producto9"> 
+                          <img class="d-block w-100" src="./images/Carousel/telefono9.jpg">
+                        </a>       
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/producto10"> 
+                          <img class="d-block w-100" src="./images/Carousel/telefono10.jpg">
+                        </a>       
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/producto11"> 
+                          <img class="d-block w-100" src="./images/Carousel/telefono11.jpg">
+                        </a>       
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/producto12"> 
+                          <img class="d-block w-100" src="./images/Carousel/telefono12.jpg">
+                        </a>       
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/producto13"> 
+                          <img class="d-block w-100" src="./images/Carousel/telefono13.jpg">
+                        </a>       
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/producto14"> 
+                          <img class="d-block w-100" src="./images/Carousel/telefono14.jpg">
+                        </a>       
+                      </div>
+                      <div class="carousel-item">
+                        <a href="/producto15"> 
+                          <img class="d-block w-100" src="./images/Carousel/telefono15.jpg">
+                        </a>       
+                      </div>                     
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                  </a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Botones inferiores -->
+
+      <div class="row botones">
+        <div class="col-12">
+          <div class="row justify-content-center">
+
+            <div class="col-xl-2 col-lg-6 col-md-12 col-sm-12 button">
+              <i class="fas fa-sync-alt"></i>
+              <h4>30 days return</h4>
+            </div>
+  
+            <div class="col-xl-2 col-lg-6 col-md-12 col-sm-12 button" style="background-color: rgb(255, 217, 0);">
+              <i class="fas fa-truck"></i>
+              <h4>Free shipping</h4>
+            </div>
+
+            <div class="col-xl-2 col-lg-6 col-md-12 col-sm-12 button" style="background-color: rgb(250, 128, 114);">
+              <i class="fas fa-lock"></i>
+              <h4>Secure payments</h4>
+            </div>
+
+            <div class="col-xl-2 col-lg-6 col-md-12 col-sm-12 button" style="background-color: rgb(74, 190, 189);">
+              <i class="fas fa-gift"></i>
+              <h4>New products</h4>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Pie de pagina -->
+
+      <div class="row pie justify-content-center">
+
+        <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 20px;">
+          <h3 style="color: white;">Online Shopping</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt tortor vel mauris congue rutrum. Vivamus mattis, nulla in pulvinar finibus, dolor augue aliquet massa, eget dictum augue velit a eros. Morbi porta sem dapibus facilisis feugiat. Donec ac odio sapien. Duis in scelerisque arcu. Morbi elementum purus nec odio aliquam, ut ultrices turpis facilisis. Duis tincidunt magna venenatis augue mollis tincidunt. Phasellus sodales nec risus quis tempor. </p>
+          <div class="row social" style="margin-left: 0.1%;">
+
+            <div class="col-2 socialButton">
+              <a href="#" style="color: white;">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+
+            <div class="col-2 socialButton">
+              <a href="#" style="color: white;">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+
+            <div class="col-2 socialButton">
+              <a href="#" style="color: white;">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 20px;">
+          <h3 style="color: white;">User navigation</h3>
+          <a href="#" style="color:  rgb(132, 142, 133);">My account</a>
+          <hr/>
+          <a href="#" style="color:  rgb(132, 142, 133);">Order History</a>
+          <hr/>
+          <a href="#" style="color:  rgb(132, 142, 133);">Wishlist</a>
+          <hr/>
+          <a href="#" style="color:  rgb(132, 142, 133);">Front page</a>
+          <hr/>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 20px;">
+          <h3 style="color: white;">Categories</h3>
+          <a href="#" style="color:  rgb(132, 142, 133);">Mobile Phone</a>
+          <hr/>
+          <a href="#" style="color:  rgb(132, 142, 133);">Home accesories</a>
+          <hr/>
+          <a href="#" style="color:  rgb(132, 142, 133);">LED TV</a>
+          <hr/>
+          <a href="#" style="color:  rgb(132, 142, 133);">Computer</a>
+          <hr/>
+          <a href="#" style="color:  rgb(132, 142, 133);">Gadets</a>
+          <hr/>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 20px;">
+          <h3 style="color: white;">Newsletter</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt tortor vel mauris congue rutrum.</p>
+          <input type="email" class="form-control email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <button type="button" class="btn btn-primary" style="background-color: rgb(90, 136, 202);; border: none;">Suscribe</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
